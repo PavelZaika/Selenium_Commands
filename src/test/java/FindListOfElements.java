@@ -27,7 +27,7 @@ public class FindListOfElements {
         driver.findElement(By.xpath("//a[text()='Стиральные машины']")).click(); // go to link
 
 
-        List<WebElement> checkboxes = driver.findElements(By.xpath("//input [@type='checkbox' and @name[contains(.,'Производитель')]]"));
+        List<WebElement> checkboxes = driver.findElements(By.xpath("//input [@type='checkbox' and @name[contains(.,'Производитель')]]")); //we can use list for adding all elements from one group
 
 
         if (checkboxes.size() == 12) {
@@ -36,7 +36,8 @@ public class FindListOfElements {
             System.out.println("Wrong!!!!");
         }
 
-        Actions actions = new Actions(driver);
+
+        Actions actions = new Actions(driver); // something wrong with click and i decide to use the action and movetoelement
 
 
         for (WebElement checkbox : checkboxes) {
