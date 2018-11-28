@@ -9,11 +9,6 @@ import org.openqa.selenium.interactions.Actions;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-//test
-//test
-
-
-
 
 public class FindListOfElements {
     static WebDriver driver;
